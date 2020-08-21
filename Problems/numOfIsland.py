@@ -6,6 +6,10 @@ class Solution(object):
         """
 
         maxX = len(grid)
+
+        # Add 'if grid else 0'
+        # if you dont, u may get 'IndexError: list index out of range'
+
         maxY = len(grid[0]) if grid else 0
         checked = [[0 for i in range(maxY)] for j in range(maxX)]
 
@@ -45,3 +49,17 @@ grid = [
 ]
 s = Solution()
 print(s.numIslands(grid))
+
+
+# class Solution(object):
+#     def numIslands(self, grid):
+#         m, n, count, dirs = len(grid), len(grid[0]) if grid else 0, 0, [[-1, 0], [1, 0], [0, 1], [0, -1]]
+#         def dfs(i, j):
+#             if 0 <= i < m and 0 <= j < n and int(grid[i][j]):
+#                 grid[i][j] = 0
+#                 for dir in dirs: dfs(i + dir[0], j + dir[1])
+#         for i in range(m):
+#             for j in range(n): 
+#                 count += int(grid[i][j])
+#                 dfs(i, j)
+#         return count
