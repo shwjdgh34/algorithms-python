@@ -3,6 +3,13 @@
 ## numOfIsland
 
 - DFS & BFS O(n^2)
+- 이 문제에서는 checked 배열을 따로 선언을 안해도 grid 1값을 0으로 만들어줌으로써 checked를 표현할 수 있다.
+- M x N 배열 선언하기
+
+```python
+checked = [[0 for i in range(N)] for j in range(M)]
+```
+
 - Error :
 
 ```python
