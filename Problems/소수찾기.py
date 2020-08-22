@@ -27,13 +27,13 @@ def solution(n):
 '''
 
 
-def solution(n):
-    num = set(range(2, n+1))
+# def solution(n):
+#     num = set(range(2, n+1))
 
-    for i in range(2, n+1):
-        if i in num:
-            num -= set(range(2*i, n+1, i))
-    return len(num)
+#     for i in range(2, n+1):
+#         if i in num:
+#             num -= set(range(2*i, n+1, i))
+#     return len(num)
 
 
 '''
@@ -41,18 +41,18 @@ def solution(n):
 '''
 
 
-def isPrime(n):
-    if n == 1:
-        return False
-    for x in range(2, int(n**0.5)+1):
-        if n % x == 0:
-            return False
-    return True
+# def isPrime(n):
+#     if n == 1:
+#         return False
+#     for x in range(2, int(n**0.5)+1):
+#         if n % x == 0:
+#             return False
+#     return True
 
 
-def solution(n):
-    count = 0
-    for x in range(1, n+1):
-        if isPrime(x):
-            count += 1
-    return count
+# def solution(n):
+#     count = 0
+#     for x in range(1, n+1):
+#         if isPrime(x):
+#             count += 1
+#     return count
