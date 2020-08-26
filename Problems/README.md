@@ -24,3 +24,20 @@ checked = [[0 for i in range(N)] for j in range(M)]
 
 - 완전탐색 O(n^2)
 - hashmap O(n)
+
+## trappingRainWater
+
+- stack O(n^2)
+
+## 주식가격
+
+- stack O(n)
+- 완전탐색 O(n^2)
+
+## 프린터
+
+- deque O(n^2)
+
+## 다리를 지나는 트럭
+
+- deque O(n)
