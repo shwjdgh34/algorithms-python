@@ -1,0 +1,8 @@
+{
+  "items": [
+    { "name": "The Shawshank Redemption", "tags": ["90s", "drama"] },
+    { "name": "The Godfather", "tags": ["70s", "drama", "crime"] },
+    { "name": "The Dark Knight", "tags": ["action", "crime", "drama"] },
+    { "name": "The Godfather: Part II", "tags": ["70s", "crime", "drama"] }
+  ]
+}
