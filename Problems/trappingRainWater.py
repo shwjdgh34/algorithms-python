@@ -1,3 +1,8 @@
+'''
+stack 이용한 풀이
+O(n^2)
+'''
+
 class Solution(object):
     def trap(self, height):
         """
@@ -30,4 +35,4 @@ class Solution(object):
 
 
 s = Solution()
-print(s.trap([4, 2, 3]))
+print(s.trap([0,1,0,2,1,0,1,3,2,1,2,1]))
