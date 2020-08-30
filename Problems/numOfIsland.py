@@ -63,3 +63,53 @@ print(s.numIslands(grid))
 #                 count += int(grid[i][j])
 #                 dfs(i, j)
 #         return count
+
+
+
+'''
+BFS
+'''
+
+
+# from collections import deque
+
+
+# def searchIsland(mapList, x, y):
+#     queue = deque()
+
+#     dx = [1, 0, 0, -1]
+#     dy = [0, 1, -1, 0]
+
+#     n = len(mapList)
+#     m = len(mapList[0])
+
+#     mapList[x][y] = 0
+#     queue.append((x, y))
+
+#     while queue:
+#         x, y = queue.popleft()
+#         for i in range(4):
+#             nextX = x + dx[i]
+#             nextY = y + dy[i]
+
+#             if 0 <= nextX < n and 0 <= nextY < m:
+#                 if mapList[nextX][nextY] == 1:
+#                     mapList[nextX][nextY] = 0
+#                     queue.append((nextX, nextY))
+
+
+# mapList = [
+#     [1, 1, 0, 0, 0],
+#     [1, 1, 0, 0, 0],
+#     [0, 0, 1, 0, 0],
+#     [0, 0, 0, 1, 1]
+# ]
+
+# count = 0
+# for x in range(len(mapList)):
+#     for y in range(len(mapList[0])):
+#         if mapList[x][y] == 1:
+#             count += 1
+#             searchIsland(mapList, x, y)
+
+# print(count)
