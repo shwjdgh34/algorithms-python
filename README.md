@@ -2,6 +2,8 @@
 
 ## binary search
 
+### bisect
+
 ```python
 from bisect import bisect_left
 arr = [1, 2, 3, 3, 4, 5]
@@ -22,3 +24,28 @@ def bs(arr, x):
 ```
 
 > [출처](https://justkode.kr/python/pygorithm-2)
+
+### recursion
+
+```python
+def binarySearch(array, target, left, right):
+
+    if left > right:
+        return -1
+
+    middle_idx = (left+right)//2
+    middle = array[middle_idx]
+
+    if target == middle:
+        return middle_idx
+    elif middle > target:
+        return binarySearch(array, target, left, middle_idx-1)
+    elif middle < target:
+        return binarySearch(array, target, middle_idx+1, right)
+```
+
+### while loop
+
+```python
+
+```
